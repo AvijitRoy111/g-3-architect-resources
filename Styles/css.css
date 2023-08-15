@@ -117,12 +117,82 @@ main{
     line-height: 26px;
 }
 
+/*  feature section styles */
+.feature{
+    display:flex;
+    justify-content: space-around;
+}
+.feature-title{
+    color: var(--dark-01, #131313);
+    font-size:2rem;
+    font-weight: 700;
+    margin-top: 200px;
+    margin-bottom: 0px;
+}
+.feature-description{
+    width: 586px;
+    color: var(--dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 10px;
+    padding-right: 80px;
+}
 
+.feature-content-title{
+    color: var(--dark-01, #131313);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+.feature-content{
+    width: 586px;
+    color: var(--dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 10px;
+}
+.feature-img{
+    width: 708px;
+    height: 982px;
+}
+.feature-img img{
+    margin-top: 120px;
+}
+.ten-years-btn{
+    border-radius: 8px;
+    background: #FF900E;
+    width: 280px;
+    height: 150px;
+    position:relative ;
+    bottom: 150px;
+    right: 80px;
+}
+.ten-years-btn h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+.ten-years-btn p{
+    color: #FFF;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 40px;
+}
 /* facts sectiion styles */
 .fact-title{
     color: var(--dark-01, #131313);
     font-size: 2rem;
     font-weight: 700;
+    margin-top: 200px;
     margin-bottom: 0px;
 }
 .facts-description{
@@ -224,7 +294,7 @@ main{
     .header{
         padding: 20px;
     }
-    nav, .teams-container,.fact-card-container,.sponcer-img{
+    nav, .teams-container,.feature,.fact-card-container,.sponcer-img{
         flex-direction: column;
     }
 
@@ -246,6 +316,16 @@ main{
         width: 100%;
         margin-left: 0px;
     }
+    .feature-img img{
+        width: 100%;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    .feature-description{
+        width: 100%;
+        margin-left: 0px;
+        padding-right: 10px;
+    }
 
 }
 /* tablet devices */
@@ -253,7 +333,7 @@ main{
     .header{
         padding: 40px;
     }
-    nav , .teams-container{
+    nav ,.feature, .teams-container{
         flex-direction: column;
     }
     .teams-content ,.facts-description{
@@ -277,6 +357,11 @@ main{
     .footer{
         width: 100%;
         margin-left: 0px;
+    }
+    .feature-description{
+        width: 100%;
+        margin-left: 0px;
+        padding-right: 10px;
     }
 
 }
